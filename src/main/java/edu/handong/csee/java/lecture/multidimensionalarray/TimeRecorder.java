@@ -16,7 +16,7 @@ public class TimeRecorder {
 		
 		myTimeRecoder.getData();
 		
-		myTimeRecoder.computeTotalPerWeekDay();
+		myTimeRecoder.computeTotals();
 		myTimeRecoder.computeTotalPerEmployee();
 		
 		myTimeRecoder.printResults();
@@ -49,7 +49,7 @@ public class TimeRecorder {
 		myScanner.close();	
 	}
 	
-	public void computeTotalPerWeekDay() {
+	public void computeTotals() {
 			
 		for(WeekDays currentDay:WeekDays.values()) {
 			
